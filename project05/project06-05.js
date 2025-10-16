@@ -11,6 +11,11 @@
 */
 
 window.addEventListener("load", function() {
+
+   // Fix the invalid regex pattern for phone number
+   document.getElementById("phoneBox").pattern = "^\\d{10}$|^(\\(\\d{3}\\)\\s*)?\\d{3}(?:\\s|-)?\\d{4}$";
+
+
    // Calculate the shopping cart when the page loads
    calcCart();
 
